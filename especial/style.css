@@ -1,0 +1,736 @@
+/*General*/
+
+body {
+    margin: 0;
+    overflow-x: hidden !important;
+}
+.open {
+    display: block;
+    width: 440px;
+    z-index: 99;
+    position: absolute;
+    background: #fdfdfd;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px .5px rgba(0, 0, 0, 0.5);
+    padding-left: 12px;
+}
+.open p {
+    text-align: left !important;
+}
+.close {
+    display: none;
+}
+a, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cerrar {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+/*Header*/
+
+header {
+    background-color: rgb(32, 30, 30);
+}
+.top-header {
+    border-bottom: solid 3px #fff;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease;
+    padding: 1px 42px;
+    height: 65px;
+}
+.a-header {
+    display: inline-block;
+    margin-top: 13px;
+}
+.logo-desktop {
+    font-size: 2.5rem;
+    color: #ffff;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 700;
+    margin: 0;
+}
+.logo-mobile {
+    font-size: 2.5rem;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: 700;
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+.right {
+    margin-top: 13px;
+    float: right !important;
+    padding-right: 82px;
+}
+header span {
+    font-size: 0;
+}
+span a.btn-fb {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+span a.btn-twt {
+    background-position: 0 -43px;
+    background-repeat: no-repeat;
+}
+span a.btn-wsp {
+    background-position: 0 -86px;
+    background-repeat: no-repeat;
+}
+.right span a {
+    background-image: url(https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg);
+}
+span [class*="btn-"] {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-left: 10px;
+}
+.right span a {
+    background-image: url(https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg);
+}
+
+/************************/ 
+
+/*Vacuna*/
+.vacunasSite {
+    max-width: 968px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.vacunaSiteBox {
+    display: flex;
+    flex-direction: column;
+}
+.vacunaRow {
+    display: flex;
+    justify-content: space-around;
+}
+.vacuna {
+    height: 128px;
+    width: 178px;
+    margin: 10px 0px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 25px;
+}
+.vacuna img {
+    width: 178px;
+    height: 128px;
+    border-radius: 15px 15px 0 0;
+}
+.nombreVacuna {
+    font-size: 12px;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    text-align: center;
+}
+.vacunaActiva {
+    background-color: rgb(32, 30, 30);
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+    border-radius: 15px;
+    color: #fff;
+}
+
+/************/
+.titular-textos {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.titular-textos h1 {
+    font-size: 35px;
+}
+.titular-textos p {
+    text-align: justify;
+}
+
+/************/
+.nota-ensayos {
+    width: 1000px;
+    margin: 0 auto;
+    background :#fbeb00;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+.nota-ensayos p {
+    margin: 0;
+}
+
+/*Carrera*/
+.carreraSite {
+    width: 1024px;
+    margin: 0 auto;
+}
+.carreraRow {
+    display: flex;
+    color: white;
+    background: rgb(32, 30, 30);
+}
+.mes {
+    width: 98px;
+    text-align: center;
+    border-right: solid 1px #bfbfbf;
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+.mes p {
+    font-size: 14px;
+    width: 100%;
+    font-weight: 500;
+}
+.fin-de-año {
+    border-right: solid 3px #e7ee00 !important;
+}
+
+.aprobación-anticipada h4 {
+    margin: 0;
+    margin-top: 11px;
+}
+.aprobación-emergencia h4 {
+    margin: 0;
+    margin-top: 4px;
+}
+
+.open a, .infoVac-mobile a {
+    color: #d00000;
+    text-decoration: none;
+    display: block;
+}
+
+.vacunaBlock {
+    width: 98px;
+    height: 60px;
+    border-right: solid 1px #c1c1c1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.vacunaBlock p {
+    font-size: 12px;
+    text-align: center;
+}
+.vacuna-info-tit {
+    color: #2479ff;
+    text-decoration: underline #2479ff;
+    cursor: pointer;
+}
+
+.info {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 0px 5px .1px rgb(255, 0, 0);
+}
+.vacunaOnRow {
+    width: 1024px;
+    height: 54px;
+    background-color: #f4f4f4;
+    display: flex;
+    position: relative;
+    border-bottom: solid 1px #c1c1c1;
+}
+.vacunaOnRow::before {
+    content: '';
+    height: 1.5px;
+    background: rgba(0, 0, 0, 0.5);;
+    position: absolute;
+    margin-left: 77px;
+    top: 54%;
+}
+.vacuna1Row::before, .vacuna8Row::before,.vacuna11Row::before,.vacuna14Row::before,.vacuna15Row::before {
+    width: 68%; /*termina en diciembre*/
+}
+.vacuna2Row::before,.vacuna4Row::before, .vacuna6Row::before {
+    width: 82%; /*termina en Aprobación de emergencia*/
+}
+.vacuna3Row::before,.vacuna9Row::before,.vacuna10Row::before {
+    width: 89%; /*termina en Meta*/
+}
+.vacuna5Row::before, .vacuna7Row::before, .vacuna12Row::before, .vacuna13Row::before {
+    width: 60%; /*termina en noviembre*/
+}
+
+
+/*Info*/
+
+.logo-de-vacuna  {
+    top: 4px;
+    left: 4px;
+    width: 430px;
+}
+
+
+
+.cerrar {
+    border-radius: 10px;
+    border: solid 1px black;
+    width: 17px;
+    height: 17px;
+}
+
+.infoVac5-octubre,.infoVac5-septiembre,.infoVac5-agosto,.infoVac5-julio,
+.infoVac5-mayo,.infoVac5-abril,.infoVac5-marzo,.infoVac4-septiembre,
+.infoVac4-agosto,.infoVac4-julio,.infoVac4-junio,.infoVac4-mayo,
+.infoVac4-abril,.infoVac3-diciembre,.infoVac3-noviembre,.infoVac3-octubre,
+.infoVac3-septiembre,.infoVac3-julio,.infoVac3-abril,.infoVac2-noviembre,
+.infoVac2-octubre,.infoVac2-septiembre,.infoVac2-agosto,.infoVac2-julio,
+.infoVac2-abril,.infoVac1-octubre,.infoVac1-septiembre,.infoVac1-agosto, 
+.infoVac1-julio,.infoVac1-mayo,.infoVac1-abril,.infoVac6-noviembre,.infoVac6-octubre,
+.infoVac6-septiembre,.infoVac6-agosto,.infoVac6-junio,.infoVac7-julio,.infoVac7-agosto,
+.infoVac7-septiembre,.infoVac7-octubre,.infoVac7-noviembre,.infoVac8-septiembre,
+.infoVac8-agosto,.infoVac8-mayo,.infoVac9-marzo,.infoVac9-mayo,.infoVac9-julio,.infoVac9-septiembre,
+.infoVac9-noviembre,.infoVac10-abril,.infoVac10-octubre,.infoVac10-noviembre,.infoVac11-octubre,
+.infoVac11-agosto,.infoVac11-julio,.infoVac11-junio,.infoVac12-abril,.infoVac12-julio,.infoVac12-noviembre,
+.infoVac13-julio,.infoVac13-noviembre,.infoVac14-noviembre,.infoVac14-julio,.infoVac15-agosto,.infoVac15-junio
+ {
+    top: 4px;
+    left: 4px;
+    width: 430px;
+}
+.cerrar-Vac5-octubre,.cerrar-Vac5-septiembre,.cerrar-Vac5-agosto,.cerrar-Vac5-julio,
+.cerrar-Vac5-mayo,.cerrar-Vac5-abril,.cerrar-Vac5-marzo,.cerrar-Vac4-septiembre,
+.cerrar-Vac4-agosto,.cerrar-Vac4-julio,.cerrar-Vac4-junio,.cerrar-Vac4-mayo,
+.cerrar-Vac4-abril,.cerrar-Vac3-diciembre,.cerrar-Vac3-noviembre,.cerrar-Vac3-octubre,
+.cerrar-Vac3-septiembre,.cerrar-Vac3-julio,.cerrar-Vac3-abril,.cerrar-Vac2-noviembre,
+.cerrar-Vac2-octubre,.cerrar-Vac2-septiembre,.cerrar-Vac2-agosto,.cerrar-Vac2-julio,
+.cerrar-Vac2-abril,.cerrar-Vac1-octubre,.cerrar-Vac1-septiembre,.cerrar-Vac1-agosto,
+.cerrar-Vac1-julio,.cerrar-Vac1-mayo,.cerrar-Vac1-abril,.cerrar-Vac6-noviembre,.cerrar-Vac6-octubre,
+.cerrar-Vac6-septiembre,.cerrar-Vac6-agosto,.cerrar-Vac6-junio,.cerrar-Vac7-julio,.cerrar-Vac7-agosto,
+.cerrar-Vac7-septiembre,.cerrar-Vac7-octubre,.cerrar-Vac7-noviembre,.cerrar-Vac8-septiembre,
+.cerrar-Vac8-agosto,.cerrar-Vac8-mayo,.cerrar-Vac9-marzo,.cerrar-Vac9-mayo,.cerrar-Vac9-julio,.cerrar-Vac9-septiembre,
+.cerrar-Vac9-noviembre,.cerrar-Vac10-abril,.cerrar-Vac10-octubre,.cerrar-Vac10-noviembre,.cerrar-Vac11-octubre,
+.cerrar-Vac11-agosto,.cerrar-Vac11-julio,.cerrar-Vac11-junio,.cerrar-Vac12-abril,.cerrar-Vac12-julio,.cerrar-Vac12-noviembre,
+.cerrar-Vac13-julio,.cerrar-Vac13-noviembre,.cerrar-Vac14-noviembre,.cerrar-Vac14-julio,.cerrar-Vac15-agosto,.cerrar-Vac15-junio
+ {
+    top: 19px;
+    left: 459px;
+    font-size: 14px !important;
+}
+
+.infoVac1-diciembre {
+    top: 4px;
+    left: -359px;
+    width: 350px;
+}
+.cerrar-Vac1-diciembre {
+    top: 19px;
+    left: 15px;
+    font-size: 14px !important;
+}
+
+.infoVac2-diciembre {
+    top: 4px;
+    left: -449px;
+    width: 440px;
+}
+.cerrar-Vac2-diciembre {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac2-finJeringa {
+    top: 4px;
+    left: -240px;
+    width: 230px;
+}
+.cerrar-Vac2-finJeringa {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac2-ultimoTramo {
+    top: 4px;
+    left: -274px;
+    width: 265px;
+}
+.cerrar-Vac2-ultimoTramo {
+    top: 19px;
+    left: 16px;
+    font-size: 14px !important;
+}
+
+.infoVac3-finJeringa {
+    top: 4px;
+    left: -240px;
+    width: 230px;
+}
+.cerrar-Vac3-finJeringa {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac3-meta {
+    top: 4px;
+    left: -260px;
+    width: 250px;
+}
+.cerrar-Vac3-meta {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac4-noviembre {
+    top: 4px;
+    left: -488px;
+    width: 480px;
+}
+.cerrar-Vac4-noviembre {
+    top: 19px;
+    left: 17px;
+    font-size: 14px !important;
+}
+
+.infoVac4-diciembre {
+    top: 4px;
+    left: -488px;
+    width: 480px;
+}
+.cerrar-Vac4-diciembre {
+    top: 19px;
+    left: 17px;
+    font-size: 14px !important;
+}
+
+.infoVac4-ultimoTramo {
+    top: 4px;
+    left: -289px;
+    width: 280px;
+}
+.cerrar-Vac4-ultimoTramo {
+    top: 19px;
+    left: 15px;
+    font-size: 14px !important;
+}
+
+.infoVac5-noviembre {
+    top: 4px;
+    left: -465px;
+    width: 458px;
+}
+.cerrar-Vac5-noviembre {
+    top: 19px;
+    left: 18px;
+    font-size: 14px !important;
+}
+
+.infoVac6-ultimoTramo {
+    top: 4px;
+    left: -372px;
+    width: 365px;
+}
+.cerrar-Vac6-ultimoTramo {
+    top: 19px;
+    left: 18px;
+    font-size: 14px !important;
+}
+
+.infoVac6-finJeringa {
+    top: 4px;
+    left: -239px;
+    width: 233px;
+}
+.cerrar-Vac6-finJeringa {
+    top: 19px;
+    left: 18px;
+    font-size: 14px !important;
+}
+
+.infoVac6-diciembre {
+    top: 4px;
+    left: -376px;
+    width: 370px;
+}
+.cerrar-Vac6-diciembre {
+    top: 19px;
+    left: 18px;
+    font-size: 14px !important;
+}
+
+.infoVac8-diciembre {
+    top: 4px;
+    left: -376px;
+    width: 370px;
+}
+.cerrar-Vac8-diciembre {
+    top: 19px;
+    left: 18px;
+    font-size: 10px !important;
+}
+
+.infoVac9-meta {
+    top: 4px;
+    left: -240px;
+    width: 230px;
+}
+.cerrar-Vac9-meta {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac9-ultimoTramo {
+    top: 4px;
+    left: -268px;
+    width: 260px;
+}
+.cerrar-Vac9-ultimoTramo {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac9-diciembre {
+    top: 4px;
+    left: -373px;
+    width: 364px;
+}
+.cerrar-Vac9-diciembre {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac10-meta {
+    top: 4px;
+    left: -373px;
+    width: 364px;
+}
+.cerrar-Vac10-meta {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac10-ultimoTramo {
+    top: 4px;
+    left: -390px;
+    width: 380px;
+}
+.cerrar-Vac10-ultimoTramo {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac10-diciembre {
+    top: 4px;
+    left: -453px;
+    width: 445px;
+}
+.cerrar-Vac10-diciembre {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac11-diciembre {
+    top: 4px;
+    left: -453px;
+    width: 445px;
+}
+.cerrar-Vac11-diciembre {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac14-diciembre {
+    top: 4px;
+    left: -453px;
+    width: 445px;
+}
+.cerrar-Vac14-diciembre {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.infoVac15-diciembre {
+    top: 4px;
+    left: -453px;
+    width: 445px;
+}
+.cerrar-Vac15-diciembre {
+    top: 19px;
+    left: 14px;
+    font-size: 14px !important;
+}
+
+.nota-ensayos {
+    margin-top: 30px;
+}
+
+/*footer*/
+
+footer {
+    padding: 35px;
+    margin-top: 30px;
+    border-top: solid aliceblue;
+    background-color: rgb(32, 30, 30);
+}
+footer p, footer h1, footer h3 {
+    margin: 0;
+    color: white;
+}
+.creditos {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.creditos h2 {
+    color: #fff;
+    font-size: 35px;
+    margin: 0;
+}
+.credito p, .credito h3 {
+    display: inline;
+}
+.credito-first {
+    text-align: justify;
+    padding: 15px 0;
+}
+
+footer h3, div.credito {
+    margin: 10px;
+}
+
+
+.vacunasSite-mobile {
+    display: none;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+
+
+.infoVac-mobile {
+    display: none;
+}
+
+.elige-cualquier-candidata {
+    background: #fff !important;
+}
+
+.leyenda {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+@media (max-width: 480px) {
+
+    .top-header {
+        padding: 1px 5px;
+    }
+    .right {
+        padding-right: 10px;
+    }
+
+    .titular-textos {
+        width: 350px;
+    }
+    .titular-textos h1 {
+        font-size: 29px;
+    }
+    .vacunasSite {
+        display: none;
+    }
+
+    .vacunasSite-mobile {
+        display: block;
+    }
+
+    .vacuna {
+        width: 114px;
+        height: 90px;
+        padding-bottom: 33px;
+    }
+    .vacuna img {
+        width: 115px;
+        height: 90px;
+    }
+    .nombreVacuna {
+        top: 82px;
+    }
+    .carreraRow {
+        width: 1024px;
+    }
+    .carreraSite {
+        width: 350px;
+        margin: 0 auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .open {
+        display: none !important;
+    }
+    .cerrar-mobile {
+        cursor: pointer;
+        width: 20px;
+        text-align: center;
+        border-radius: 20px;
+        border: solid 1px black;
+        height: 20px;
+        top: 75px;
+        left: 340px;
+        position: absolute;
+    }
+    .cerrar-mobile p{
+        margin: 0;
+    }
+
+
+    .infoVac-mobile {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .nota-ensayos {
+        width: 340px;
+    }
+
+    .creditos {
+        width: 300px;
+    }
+    
+    .info {
+        width: 22px;
+        height: 22px;
+    }
+  }
+  
